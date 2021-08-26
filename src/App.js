@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+// import SignUp from './components/signup/SignUp';
+import { Container } from 'react-bootstrap';
+import Routing from './routing/Routing';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+  <Container style={{minHeight: "100vh"}} className="d-flex text-align-center justify-content-center">
+     <div className="w-100" style={{maxWidth: "400px"}}>
+       <Routing />
+      </div>
+     </Container>  
+   
   );
 }
 
